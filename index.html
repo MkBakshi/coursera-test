@@ -10,8 +10,13 @@
   <body>
     <h1>Expressions and Interpolations</h1>
     <div ng-controller='MsgController'>
-	    Message is <br>
+	    {{name}} has a message for you: <br>
       {{sayMessage()}}
+      <div>
+        <button ng-click="changeBird()">Change Bird</button>
+        <br>
+        <img ng-src="images/sprite{{stateOfBird}}.png">
+      </div>
 	  </div>
   </body>
 </html>
